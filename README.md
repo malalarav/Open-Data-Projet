@@ -1,43 +1,73 @@
 # Open-Data-Projet
-Bien sûr 👍 Je vais t’écrire une **description claire et concise** pour ton README, adaptée à ton projet (streaming + sliding window + dashboard sur air quality).
 
----
-
-# 🌍 Air Quality Streaming Dashboard
+# 📉 Prédiction de Désabonnement (Churn Prediction Dashboard)
 
 ## 📌 Description
 
-Ce projet met en place un **pipeline de streaming** appliqué à des données temporelles (qualité de l’air).
-L’objectif est de montrer comment :
+Le désabonnement (*churn*) est un enjeu majeur pour les entreprises, notamment dans les télécommunications, la banque ou les services numériques.
+Ce projet vise à construire un **tableau de bord interactif** permettant :
 
-* récupérer des données en continu (API ou générateur synthétique),
-* appliquer des **agrégations avec fenêtre glissante** pour optimiser le traitement,
-* visualiser les résultats dans un **dashboard interactif** (Streamlit/Dash).
-
-Ce type d’approche peut s’appliquer à différents domaines :
-
-* 🌫️ Qualité de l’air (polluants : PM2.5, NO₂, O₃, …)
-* 💹 Données financières (prix, volatilité)
-* 🌊 Monitoring de rivières (débit, niveau, température)
+* d’analyser les comportements clients,
+* de prédire la probabilité de désabonnement,
+* et de visualiser les résultats sous forme de graphiques et cartes interactives.
 
 ---
 
-## 🚀 Fonctionnalités
+## 📊 Données utilisées
 
-* 📡 **Streaming source** : lecture continue des données (API ou émulateur Kafka/local).
-* ⏳ **Sliding window aggregation** : calculs sur fenêtres temporelles (ex : moyenne des 24h, max sur 1h, etc.).
-* 📊 **Dashboard interactif** : visualisation en temps réel des métriques et tendances.
-* 💾 **Optionnel** : stockage de l’historique pour analyses futures.
+### 1. **Dataset Public : IBM Telco Customer Churn** *(recommandé)*
+
+* ~7 000 clients de télécommunications
+* **Variables disponibles :**
+
+  * Informations démographiques : genre, âge, situation familiale
+  * Services souscrits : téléphone, internet (DSL, fibre), sécurité en ligne…
+  * Informations de compte : ancienneté, contrat, facturation, frais mensuels
+  * **Variable cible :** `Churn` (binaire : Oui / Non)
+
+👉 Disponible sur Kaggle : *IBM Telco Customer Churn Dataset*
+
+### 2. **Autres datasets**
+
+* **Banque / cartes de crédit** : informations clients, produits détenus, score de crédit, géographie.
+* Pertinence géographique : permet d’intégrer une **carte interactive** montrant les zones à risque.
+
+### 3. **Données réelles ou simulées** *(optionnel)*
+
+* Connexion à une base de données SQL/NoSQL
+* API interne pour récupérer des métriques comportementales en temps réel
+
+---
+
+## 🛠️ Technologies clés
+
+* **Python** (Pandas, Scikit-learn, NumPy)
+* **Visualisation** : Streamlit ou Dash pour le tableau de bord interactif
+* **Machine Learning** : modèles de classification (Logistic Regression, Random Forest, XGBoost…)
+* **Stockage** : CSV / Base de données (optionnel pour un cas réel)
+
+---
+
+## 🚀 Fonctionnalités prévues
+
+* Import et nettoyage des données
+* Entraînement de modèles de prédiction du churn
+* Évaluation des performances (précision, rappel, F1-score, AUC)
+* Visualisations interactives :
+
+  * Distribution des clients (par âge, contrat, services souscrits…)
+  * Importance des variables (features les plus corrélées au churn)
+  * Taux de churn par région (via carte interactive)
+* Prédiction en direct : tester un profil client et obtenir la probabilité de churn
 
 ---
 
 ## 📦 Livrables
 
-* Application de streaming fonctionnelle
-* Dashboard interactif (Streamlit ou Dash)
-* Générateur de données synthétiques reproductible
-* Évaluation des performances (latence, précision)
+* Script de préparation et modélisation des données
+* Tableau de bord interactif (Streamlit/Dash)
+* Documentation pour reproduire les résultats
 
----
 
-👉 Tu veux que je te fasse une **version courte (2–3 phrases max)** pour un README minimal, ou tu préfères garder ce format un peu détaillé (avec icônes et sections) ?
+Tu veux que je te propose aussi une **version courte (2–3 paragraphes max)** pour un README minimaliste ?
+
