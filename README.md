@@ -69,5 +69,3 @@ Ce projet vise à construire un **tableau de bord interactif** permettant :
 * Documentation pour reproduire les résultats
 
 
-Tu veux que je te propose aussi une **version courte (2–3 paragraphes max)** pour un README minimaliste ?
-
