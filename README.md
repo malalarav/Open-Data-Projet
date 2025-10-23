@@ -32,19 +32,15 @@ Ce projet vise à construire un **tableau de bord interactif** permettant :
 * **Banque / cartes de crédit** : informations clients, produits détenus, score de crédit, géographie.
 * Pertinence géographique : permet d’intégrer une **carte interactive** montrant les zones à risque.
 
-### 3. **Données réelles ou simulées** *(optionnel)*
-
-* Connexion à une base de données SQL/NoSQL
-* API interne pour récupérer des métriques comportementales en temps réel
 
 ---
 
 ## 🛠️ Technologies clés
 
 * **Python** (Pandas, Scikit-learn, NumPy)
-* **Visualisation** : Streamlit ou Dash pour le tableau de bord interactif
+* **Visualisation** : Streamlit pour le tableau de bord interactif
 * **Machine Learning** : modèles de classification (Logistic Regression, Random Forest, XGBoost…)
-* **Stockage** : CSV / Base de données (optionnel pour un cas réel)
+* **Stockage** : CSV ou xlsx
 
 ---
 
