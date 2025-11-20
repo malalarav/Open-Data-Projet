@@ -1,0 +1,13 @@
+# --- Environnements Virtuels ---
+.venv
+venv/
+env/
+ENV/
+
+# --- Fichiers temporaires Python (Bytecode) ---
+__pycache__/
+*.pyc
+
+# --- Fichiers système inutiles ---
+.DS_Store
+Thumbs.db
