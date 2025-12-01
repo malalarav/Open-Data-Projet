@@ -1,8 +1,8 @@
 # Open-Data-Projet
 
-# 📉 Prédiction de Désabonnement (Churn Prediction Dashboard)
+# Prédiction de Désabonnement (Churn Prediction Dashboard)
 
-## 📌 Description
+## Description
 
 Le désabonnement (*churn*) est un enjeu majeur pour les entreprises, notamment dans les télécommunications, la banque ou les services numériques.
 Ce projet vise à construire un **tableau de bord interactif** permettant :
@@ -13,9 +13,9 @@ Ce projet vise à construire un **tableau de bord interactif** permettant :
 
 ---
 
-## 📊 Données utilisées
+## Données utilisées
 
-### 1. **Dataset Public : IBM Telco Customer Churn** *(recommandé)*
+### 1. **Dataset Public : IBM Telco Customer Churn**
 
 * ~7 000 clients de télécommunications
 * **Variables disponibles :**
@@ -25,26 +25,10 @@ Ce projet vise à construire un **tableau de bord interactif** permettant :
   * Informations de compte : ancienneté, contrat, facturation, frais mensuels
   * **Variable cible :** `Churn` (binaire : Oui / Non)
 
-👉 Disponible sur Kaggle : *IBM Telco Customer Churn Dataset*
-
-### 2. **Autres datasets**
-
-* **Banque / cartes de crédit** : informations clients, produits détenus, score de crédit, géographie.
-* Pertinence géographique : permet d’intégrer une **carte interactive** montrant les zones à risque.
+Disponible sur Kaggle : *IBM Telco Customer Churn Dataset*
 
 
----
-
-## 🛠️ Technologies clés
-
-* **Python** (Pandas, Scikit-learn, NumPy)
-* **Visualisation** : Streamlit pour le tableau de bord interactif
-* **Machine Learning** : modèles de classification (Logistic Regression, Random Forest, XGBoost…)
-* **Stockage** : CSV ou xlsx
-
----
-
-## 🚀 Fonctionnalités prévues
+## Fonctionnalités
 
 * Import et nettoyage des données
 * Entraînement de modèles de prédiction du churn
@@ -58,7 +42,7 @@ Ce projet vise à construire un **tableau de bord interactif** permettant :
 
 ---
 
-## 📦 Livrables
+## Livrables
 
 * Script de préparation et modélisation des données
 * Tableau de bord interactif (Streamlit/Dash)
