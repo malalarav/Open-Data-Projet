@@ -5,7 +5,7 @@ import joblib
 import numpy as np
 import pydeck as pdk
 
-# --- Configuration de la page ---
+# Configuration de la page
 st.set_page_config(
     page_title="Dashboard Churn Telco",
     layout="wide"
@@ -23,7 +23,7 @@ def load_data(path):
         st.error(f"Erreur de chargement du fichier nettoyé. Vérifiez le séparateur (';') et l'encodage. Détail : {e}")
         st.stop()
 
-    # Les conversions et nettoyages ont déjà été effectués, nous assurons juste les types
+    # Les conversions et nettoyages ont déjà été effectués, ce sont juste des vérifications
     # pour garantir la compatibilité avec les graphiques et le modèle.
     try:
         data['Total Charges'] = pd.to_numeric(data['Total Charges'], errors='coerce')
@@ -66,7 +66,7 @@ tab_presentation, tab_analyse, tab_prediction, tab_carte = st.tabs([
     "3. Carte Géographique"
 ])
 
-# PRÉSENTATION
+# Présentation du projet
 with tab_presentation:
     st.header("Bienvenue : Contexte et Objectifs du Projet")
     st.info(
@@ -211,8 +211,6 @@ with tab_carte:
     if map_data.empty:
         st.warning(f"Aucune donnée disponible pour la ville : {selected_city}")
     else:
-        # --- LA CORRECTION EST ICI ---
-        # Créer une colonne de couleur en utilisant .apply()
         map_data['color'] = map_data['Churn Label'].apply(
             lambda x: [255, 0, 0, 160] if x == 'Yes' else [0, 128, 0, 160]
         )
