@@ -52,7 +52,7 @@ def load_model(path):
         st.error(f"Erreur lors du chargement du modèle : {e}")
         return None
 
-data = load_data("telco_churn_cleaned.csv") 
+data = load_data("data/telco_churn_cleaned.csv") 
 model = load_model("churn_model.pkl")
 
 st.title(" Dashboard de Prédiction du Churn Client (IBM Telco)")
